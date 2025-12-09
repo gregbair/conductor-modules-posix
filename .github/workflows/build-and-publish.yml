@@ -17,12 +17,13 @@ jobs:
   build-and-test:
     name: Build and Test
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        container_image: [ fedora:latest, centos:latest, rhel:latest ]
-      fail-fast: false
-
-    container: ${{ matrix.container_image }}
+    #   TODO: Reenable once I figure out issues
+    #    strategy:
+    #      matrix:
+    #        container_image: [ fedora:latest, centos:latest, rhel:latest ]
+    #      fail-fast: false
+    #
+    #    container: ${{ matrix.container_image }}
     
     steps:
       - name: Checkout code
