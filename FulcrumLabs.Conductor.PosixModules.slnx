@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/FulcrumLabs.Conductor.Modules.Posix.Firewalld/FulcrumLabs.Conductor.Modules.Posix.Firewalld.csproj" />
+  <Project Path="test/FulcrumLabs.Counductor.Modules.Posix.Tests/FulcrumLabs.Counductor.Modules.Posix.Tests.csproj" />
+</Solution>
