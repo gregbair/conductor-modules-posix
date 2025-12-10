@@ -17,12 +17,13 @@ namespace FulcrumLabs.Conductor.Modules.Posix.Firewalld;
 /// </summary>
 public class FirewalldModule : ModuleBase
 {
-    /// <inheritdoc/>
-    protected override async Task<ModuleResult> ExecuteAsync(Dictionary<string, object?> vars)
+    /// <inheritdoc />
+    protected override async Task<ModuleResult> ExecuteAsync(Dictionary<string, object?> vars,
+        CancellationToken cancellationToken = default)
     {
         FirewallArgs args = new();
 
-        if (TryGetRequiredParameter(vars, "state", out var state))
+        if (TryGetRequiredParameter(vars, "state", out string state))
         {
             args.State = StringToFirewallState(state);
         }
@@ -53,9 +54,6 @@ public class FirewalldModule : ModuleBase
         {
             args.Immediate = immediate;
         }
-
-        CancellationToken
-            cancellationToken = CancellationToken.None; // TODO: Replace with real one once module lib updated
 
         return args.State switch
         {

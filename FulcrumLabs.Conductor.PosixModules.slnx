@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Firewalld/">
+    <Project Path="src/FulcrumLabs.Conductor.Modules.Posix.Firewalld/FulcrumLabs.Conductor.Modules.Posix.Firewalld.csproj" />
+    <Project Path="test/FulcrumLabs.Counductor.Modules.Posix.Tests/FulcrumLabs.Counductor.Modules.Posix.Tests.csproj" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".github\workflows\build-and-publish.yml" />
     <File Path="Directory.Build.props" />
@@ -6,6 +10,4 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
-  <Project Path="src/FulcrumLabs.Conductor.Modules.Posix.Firewalld/FulcrumLabs.Conductor.Modules.Posix.Firewalld.csproj" />
-  <Project Path="test/FulcrumLabs.Counductor.Modules.Posix.Tests/FulcrumLabs.Counductor.Modules.Posix.Tests.csproj" />
 </Solution>
